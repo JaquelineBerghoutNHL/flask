@@ -43,7 +43,7 @@ requests==2.32.3
 semantic-version==2.10.0
 six==1.16.0
 soupsieve==2.6
-termcolor==2.5.0
+termcolor
 urllib3==1.26.20
 wcwidth==0.2.13
 Werkzeug==3.1.3
