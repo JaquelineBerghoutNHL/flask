@@ -1,6 +1,5 @@
 attrs==20.3.0
 aws==0.2.5
-awsebcli==3.21.0
 bcrypt==4.2.1
 beautifulsoup4==4.12.3
 blessed==1.20.0
@@ -26,7 +25,6 @@ itsdangerous==2.2.0
 jellyfish==0.11.2
 Jinja2==3.1.4
 jmespath==1.0.1
-lib50==3.0.11
 MarkupSafe==3.0.2
 packaging==24.2
 paramiko==3.5.0
