@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request, g, url_for
 from database import get_db, close_connection, init_db, insert_submission, get_submissions
 
 app = Flask(__name__)
@@ -15,7 +15,6 @@ def build_pyramid():
 
     if not name or not height:
         return "<p style='color: red;'>Both 'name' and 'height' parameters are required in the URL.</p>", 400
-
     try:
         height = int(height)
         if 1 <= height <= 8:
@@ -28,6 +27,9 @@ def build_pyramid():
             <pre style="font-family: monospace; line-height: 1.5;">{pyramid}</pre>
             <p><a href="/">Go back to the main page</a></p>
             """
+
+            #return redirect("/")
+
         else:
             return "<p style='color: red;'>Height must be between 1 and 8.</p>", 400
     except ValueError:
